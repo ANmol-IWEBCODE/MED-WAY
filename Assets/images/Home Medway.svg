@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="201" viewBox="0 0 1440 201">
+  <defs>
+    <filter id="Path_80" x="-619.287" y="-448.982" width="2620.423" height="2201.505" filterUnits="userSpaceOnUse">
+      <feOffset dy="-25" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#021844" flood-opacity="0.51"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <path id="Path_680" data-name="Path 680" d="M1358.634-27.633c696.926-7.148,816.434,287.876,810.194,897.026s-924.151,527.966-1358.213,240.279-821.222-74.251-814.982-683.4S661.708-20.485,1358.634-27.633Z" transform="matrix(-0.966, 0.259, -0.259, -0.966, 1859.206, 1418.771)" fill="#fcfcfc"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_681" data-name="Path 681" d="M1358.634-27.633c696.926-7.148,816.434,287.876,810.194,897.026s-924.151,527.966-1358.213,240.279-821.222-74.251-814.982-683.4S661.708-20.485,1358.634-27.633Z" transform="matrix(-0.966, 0.259, -0.259, -0.966, 1866.206, 1616.771)" fill="#fcfcfc"/>
+    </clipPath>
+    <clipPath id="clip-Home_Medway">
+      <rect width="1440" height="201"/>
+    </clipPath>
+  </defs>
+  <g id="Home_Medway" data-name="Home Medway" clip-path="url(#clip-Home_Medway)">
+    <rect width="1440" height="201" fill="#fcfcfc"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_80)">
+      <path id="Path_80-2" data-name="Path 80" d="M1159-156.711c697.876-8.415,1018.575,416.734,1011.358,1033.727s-926.235,536.313-1360.423,245.658S-12.268,1048.853-5.051,431.86,461.131-148.3,1159-156.711Z" transform="translate(1907.71 885.09) rotate(161)" fill="#38dcd0"/>
+    </g>
+    <g id="Group_10908" data-name="Group 10908" transform="translate(21 -446)">
+      <path id="Path_78" data-name="Path 78" d="M1314.148-242.66c696.926-7.312,860.919,509.829,854.679,1132.93s-924.151,540.058-1358.213,245.782S-10.607,1060.1-4.368,437,617.222-235.349,1314.148-242.66Z" transform="matrix(-0.966, 0.259, -0.259, -0.966, 1870.33, 1461.094)" fill="#fcfcfc"/>
+    </g>
+    <text id="Hay_una_mejor_forma" data-name="Hay una mejor forma" transform="translate(-468 66)" fill="#fff" font-size="45" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="0" y="47">Conecta con miles </tspan><tspan x="0" y="94">de pacientes que están </tspan><tspan x="0" y="141">buscando tus servicios</tspan></text>
+  </g>
+</svg>

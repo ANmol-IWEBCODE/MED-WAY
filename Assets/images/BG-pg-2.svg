@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="519" viewBox="0 0 1440 519">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.461" y1="0.605" x2="0.929" y2="0.097" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#001d57"/>
+      <stop offset="1" stop-color="#003087"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="Path_680" data-name="Path 680" d="M1358.634-27.633c696.926-7.148,816.434,287.876,810.194,897.026s-924.151,527.966-1358.213,240.279-821.222-74.251-814.982-683.4S661.708-20.485,1358.634-27.633Z" transform="matrix(-0.966, 0.259, -0.259, -0.966, 1859.206, 1418.771)" fill="#fcfcfc"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_681" data-name="Path 681" d="M1358.634-27.633c696.926-7.148,816.434,287.876,810.194,897.026s-924.151,527.966-1358.213,240.279-821.222-74.251-814.982-683.4S661.708-20.485,1358.634-27.633Z" transform="matrix(-0.966, 0.259, -0.259, -0.966, 1866.206, 1616.771)" fill="#fcfcfc"/>
+    </clipPath>
+    <clipPath id="clip-Home_Medway">
+      <rect width="1440" height="519"/>
+    </clipPath>
+  </defs>
+  <g id="Home_Medway" data-name="Home Medway" clip-path="url(#clip-Home_Medway)">
+    <rect width="1440" height="519" fill="#fcfcfc"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="1440" height="734" fill="url(#linear-gradient)"/>
+    <path id="Path_743" data-name="Path 743" d="M5184.155,627.707c-17.214,412.4-2209.37,358.476-3245.049,164.2S-22.129,742.564-4.914,330.161,5201.371,215.3,5184.155,627.707Z" transform="translate(3792.229 938.499) rotate(178)" fill="#38dcd0"/>
+    <path id="Path_78" data-name="Path 78" d="M2368.752-242.7C3623.077-246.532,3918.231,24.746,3907,351.608s-1663.285,283.3-2444.507,128.931S-15.538,440.7-4.308,113.834,1114.426-238.861,2368.752-242.7Z" transform="matrix(-0.998, 0.07, -0.07, -0.998, 2830.866, 882.205)" fill="#fcfcfc"/>
+  </g>
+</svg>

@@ -1,0 +1,1180 @@
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+    
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active {
+  outline: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+.search .search-submit,
+#comments .submit {
+  padding: 10px 15px;
+  border-radius: 2px;
+  line-height: 1.85714285714286;
+  border: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #eaeaea;
+  margin: 0 0px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+fieldset legend {
+  margin-bottom: 1.5em;
+  padding: 0 0.5em;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+input:focus{
+    outline: none;
+}
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  color: #333333;
+  font-family: 'Roboto', sans-serif;
+
+  background: #ffffff;
+  /* Fallback for when there is no custom background color defined. */
+  font-style: normal;
+}
+
+ul, ol {
+  margin: 0 0 1.5em 3em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+blockquote:before, blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote {
+  border-left: 5px solid rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 0 0 1.5em;
+  position: relative;
+}
+
+blockquote p:last-child {
+  margin: 0;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  margin-bottom: 1.6em;
+  overflow: auto;
+  max-width: 100%;
+  padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+.ast-button,
+.button,
+button,
+input,
+select,
+textarea {
+  color: #808285;
+  font-weight: normal;
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+}
+
+button,
+input {
+  line-height: normal;
+  /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+}
+
+big {
+  font-size: 125%;
+}
+
+mark,
+ins {
+  background: transparent;
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 0 0 1.5em 3em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+table, th, td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+th {
+  font-weight: bold;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-width: 0 1px 1px 0;
+}
+
+/*--------------------------------------------------------------
+# global
+--------------------------------------------------------------*/
+h1,h2,h3,h4,h5,h6{
+    color: #12172A;
+    font-family: 'Roboto';
+}
+
+p{
+ color: #333333;
+}
+.my-button-bg {
+    
+    background: #38dcd0;
+    color: #001d57;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #38dcd0;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+}
+.my-button-outline {
+    
+    
+    color: #38dcd0;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #38dcd0;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+    border: 1px solid #38dcd0;
+    margin-left: 20px;
+}
+
+
+
+a{
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+.my-buttons{
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+
+
+.my-buttons .my-button-bg:hover{
+    text-decoration: none !important;
+    background: none;
+    color: #fff;
+    border: 1px solid #38dcd0;
+    
+}
+.my-button-outline:hover{
+    text-decoration: none !important;
+    background: #38dcd0;
+    color: #001d57 ;
+    border: 1px solid #38dcd0;
+    
+}
+/*--------------------------------------------------------------
+# Section 1 (Home Section)
+--------------------------------------------------------------*/
+
+
+header{
+    position: relative;
+}
+#hero-section{
+    background-image: url('../images/BG-pg-2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 77vh;
+   
+}
+
+.logo{
+    width: 150px;
+    padding-top: 30px;
+}
+.my-content{
+     width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.my-content h1{
+    margin-top: 50px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.my-left{
+    padding: 0px !important;
+    margin-top: 5%;
+    
+    
+}
+.img-curve img {
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+}
+
+.hamburger-menu{
+    display: none;
+}
+.desktop{
+    display: none;
+}
+.main-navigation{
+    
+}
+
+.main-navigation ul li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;    
+    list-style: none;
+    display: inline-block;
+    padding-top: 40px;
+    color:#fefefe;
+    padding-left: 100px;
+}
+.main-navigation ul li a{
+    text-decoration: none;
+    color:#fefefe;
+}
+.main-navigation ul li a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.main-navigation ul {
+    text-align: right;
+    margin-left: 0px;
+}
+
+.search-fields{
+    margin-top: 20px;
+    justify-content: space-evenly;
+    display: flex;    
+}
+
+
+.search{
+    padding: 10px 30px 10px 30px;
+    margin-top: 14%;
+    width: 100%;
+    border: 1.5px solid #38DCD0;
+    border-radius: 21px;
+}
+/*--------------------------------------------------------------
+# Section 1 Mobile (Home Section) 
+--------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+#hero-section{
+    background-image: url('../images/Home%20Medway%20(cel).svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 83vh;
+   
+}
+.my-content h1{
+   margin-top: 20px;
+}  
+.main-navigation{
+   display: none;
+}
+.search-fields {
+   display: block;
+}
+.search{
+   margin-top: 20px;
+} 
+.search-button{
+ margin-top: 20px;
+ text-align: center;
+ width: 100%;
+    
+}
+.search-button button{
+       width: 100%;
+    }   
+    
+    
+.my-content h1{
+    font-size: 24px;
+}
+.my-content {
+    padding: 15px;
+    }
+.logo {
+ 
+    padding-left: 0px;}
+
+.my-button-bg{
+    padding: 10px 50px 10px 50px;
+}
+.my-button-outline{
+     padding: 10px 50px 10px 50px;
+}
+.hamburger-menu{
+    display: block;
+    max-width: 35% !important;
+    padding-top: 17px;
+    text-align: left;
+    margin-left: 50%;
+}
+    .col-md-10{
+        width: 70% !important;
+    }
+    .col-md-2{
+        width: 30% !important;    }
+.phone{
+    display: none;
+}
+.img-curve img {
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+}
+.desktop{
+    display: block;
+}
+    .img-mobile-center {
+    /* width: 80%; */
+    margin-top: -280px;
+}
+}
+
+/*--------------------------------------------------------------
+# Section 2 
+--------------------------------------------------------------*/
+#my-doctors h2{
+    color: #001d57;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+.my-inner{
+    border: solid 0.5px #38dcd0;
+  background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.my-inner-content{
+    display: flex;
+}
+.my-content h4{
+    margin-top: 5px;
+    color: #3b3a43;
+    font-weight: 300; 
+}
+.my-inner-content .my-designation{
+    margin-bottom: 20px;
+    width: 62%;
+    font-size: 10px !important;
+    text-transform: uppercase;
+    font-style: normal !Important;
+    border-radius: 14px;
+    border: solid 0.4px #ffffff;
+    background-color: rgba(56, 220, 208, 0.72);
+    color: #fff !important;
+    padding: 10px 20px 10px 20px;
+}
+.my-inner-content span{
+    
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.my-content p {
+    color: #595f6f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 13px;
+}  
+
+.my-content .inner-text{
+    font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: italic;
+  letter-spacing: -0.14px;
+  text-align: left;
+  color: #38dcd0;
+}
+
+/*--------------------------------------------------------------
+# Section 2 Mobile
+--------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+#my-doctors {
+    background: #f2f2f2;
+}
+.my-inner {
+    margin: 20px;
+    text-align: center;
+}
+    .mobile-display{
+        display: none;
+    }
+    .my-button-bg{
+        color: #fff;
+    }
+}
+/*--------------------------------------------------------------
+# Section 3 
+--------------------------------------------------------------*/
+
+#my-benefits{
+    background-image: url('../images/pg2-sec2.png');
+     background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+.my-benefits-content{
+   
+}
+.my-benefits-content h2{
+    font-size: 44px;
+    color: #F2F2F2;
+}
+.sec3-bg{
+    position: absolute;
+    top: -90px;
+    left: 376px;
+    height: 300px !Important;
+    z-index: -1;
+}
+
+.my-center-img img{
+    width: 70%;
+}
+.icon-img{
+    margin-bottom: -41px;
+    height: 70px !important;
+}
+.my-inner-2{
+    background: #fff;
+    padding: 50px 10px 20px 10px;
+    box-shadow: -5px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 250px;
+    margin: 0 auto;
+
+}
+
+
+.my-inner-2 p {
+    color:#333333;
+}
+  .img-mobile{
+     display: none;   
+ }
+.custom-row-3{
+    padding-bottom: 8rem;
+}
+/*--------------------------------------------------------------
+#  Section 3 Mobile
+--------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+    .sec3-bg{
+    left: 80px;
+    width: 220px;
+    top: -225px;
+}
+    
+
+ #my-benefits .my-benefits-content h2 {
+     margin-top: -100px;
+      font-size: 24px;
+        color: #fff;
+    
+    }
+    .my-inner-2{
+        box-shadow: none;
+    }
+    .img-mobile{
+        display: block;
+        position: relative;
+        z-index: -1;
+    }
+    #my-benefits{
+        background: #fff;
+        
+    }
+    .custom-row-3{
+        padding-bottom: 5rem;
+    }
+}
+
+
+/*--------------------------------------------------------------
+#  Section 4
+--------------------------------------------------------------*/
+
+.sec4-bg{
+    position: absolute;
+    top: -120px;
+    left: 245px;
+    height: 345px !Important;
+    z-index: -1;    
+}
+.my-services-content h5{
+    font-family: 'Roboto';
+    color: #003087;
+    font-size: 34px;
+    font-weight: 400;
+}
+    .custom-row{
+        padding-top: 10rem;
+    } 
+/*--------------------------------------------------------------
+#  Section 4 Mobile
+--------------------------------------------------------------*/    
+ @media only screen and (max-width: 768px) {
+        .sec4-bg{
+        display: none;
+        }  
+      .my-benefits-content h2 {
+          font-size: 24px;
+            color: #003087;
+
+        }
+        .custom-row{
+            padding-top: 20px;
+        }
+
+    }
+/*--------------------------------------------------------------
+#  Section 5
+--------------------------------------------------------------*/
+#testimonials{
+    background-image: url('../images/BG-section5.png');
+    background-size: cover;
+    padding-bottom: 11rem;
+    padding-top: 4rem;
+    background-color: #f2f2f2;
+}
+
+.my-content h2{
+    letter-spacing: -1px;
+    color: #FEFEFF;
+    font-family: 'Roboto';
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.my-inner-testimonial{
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 17px;
+    box-shadow: 0 1.5px 2.5px 0 rgba(39, 39, 39, 0.07);
+}
+
+.my-inner-testimonial h5{
+    color: #0D0D51;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Roboto';
+    letter-spacing: -0.5px;
+}
+
+.my-inner-testimonial span{
+    color: #38DCD0;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+.my-inner-testimonial p{
+   color: #595F6F;
+    font-size: 18px !important;
+    letter-spacing: -0.5px;
+    font-style: italic;
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+
+
+.my-inner-testimonial img{
+    height: 50px !important;
+}
+/*--------------------------------------------------------------
+# Section 5 Mobile(testimonials
+)
+--------------------------------------------------------------*/
+ @media only screen and (max-width: 768px) {
+     #testimonials{
+         background-color: #fff;
+         padding-top: 3rem;
+         padding-bottom: 3rem;
+     }
+     
+     
+    .my-content h2{
+        font-size: 24px;
+
+    }
+     .my-services-content h5{
+         font-size: 20px;
+     }
+}
+/*--------------------------------------------------------------
+# Section 6
+--------------------------------------------------------------*/
+#section-6{
+    background-image: url('../images/BG-section6.png');
+    background-size: cover;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    
+}
+
+#section-6 h2{
+    letter-spacing: -1px;
+    color: #003087;
+    font-family: 'Roboto';
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+}
+.heading-center{
+    margin-top: 20%;
+    color: #003087;
+    font-size: 44px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    position: absolute;
+    right: -150px;
+    
+}
+.img-center{
+    height: 500px !important;
+}
+.search-doc{
+    padding: 20px;
+    margin-top: 40%;
+    width: 100%;
+    border: 1.5px solid #38DCD0;
+    border-radius: 21px;
+}
+::placeholder{
+    color: #B7B7B7;
+    font-size: 12px;
+}
+
+input:focus{
+    outline: none;
+}
+
+button:focus{
+     outline: none;
+}
+
+/*--------------------------------------------------------------
+# Section 6 Mobile
+--------------------------------------------------------------*/
+ @media only screen and (max-width: 768px) {
+#section-6{
+background: #fff;
+}
+     
+     
+#section-6 h2{
+    font-size: 24px;
+}
+ .img-center{
+    height: 200px !important;
+}
+ .heading-center{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 0%;
+     font-size: 24px;
+    text-align: center;
+ }
+ .search-doc{
+  margin-top: 20px;
+     padding: 10px;     }    
+}
+/*--------------------------------------------------------------
+# footer Section
+--------------------------------------------------------------*/
+footer{
+    background-image: url('../images/BG-footer.png');
+    background-size: cover;
+    background-position: center center;
+    height: 210px;
+    margin-top: -90px;
+    
+}
+.footer-content img{
+    margin-bottom: -300px;
+}
+
+.footer-content ul{
+    
+    
+}
+.footer-nav ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    bottom: -167px;
+    color:#38dcd0;
+    padding-left: 20px;
+}
+.footer-nav ul li a{
+    text-decoration: none;
+    color:#38dcd0;
+}
+.footer-nav ul li a:hover{
+    text-decoration: none;
+    color:#fff;
+}
+.footer-nav ul {
+    text-align: left;
+    margin-left: 0px;
+}
+
+.footer-img img{
+    position: relative;
+    z-index: -1;
+    left: 80px;
+}
+
+/*--------------------------------------------------------------
+# footer Section Mobile
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+.footer-content img {
+    margin-bottom: -110px;
+}
+.footer-nav ul li{
+    bottom: -90px;
+    color: #38dcd0;
+    padding-left: 0px;
+}
+.footer-img img {
+    position: relative;
+    z-index: -1;
+    left: 13px;
+}
+}
+
